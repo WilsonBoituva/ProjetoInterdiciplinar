@@ -34,18 +34,18 @@ public class ProdutosView extends javax.swing.JInternalFrame {
         btnPesquisar = new javax.swing.JButton();
         btnExcluir = new javax.swing.JButton();
         pnCampos = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        LbCodigo = new javax.swing.JLabel();
+        LbDaescricao = new javax.swing.JLabel();
+        LbCategoria = new javax.swing.JLabel();
+        LbPrecoCusto = new javax.swing.JLabel();
+        LbPrecoVenda = new javax.swing.JLabel();
+        LbQtdFixa = new javax.swing.JLabel();
+        txtCodigo = new javax.swing.JTextField();
+        txtQtdFixa = new javax.swing.JTextField();
+        txtDescricao = new javax.swing.JTextField();
+        txtPrecoCusto = new javax.swing.JTextField();
+        txtPrecoVenda = new javax.swing.JTextField();
+        ComboCategoria = new javax.swing.JComboBox<>();
         scrDados = new javax.swing.JScrollPane();
         tbDados = new javax.swing.JTable();
 
@@ -96,19 +96,21 @@ public class ProdutosView extends javax.swing.JInternalFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jLabel1.setText("Codigo");
+        pnCampos.setName(""); // NOI18N
 
-        jLabel2.setText("Descrição");
+        LbCodigo.setText("Codigo");
 
-        jLabel3.setText("categoria");
+        LbDaescricao.setText("Descrição");
 
-        jLabel4.setText("Preço de custo");
+        LbCategoria.setText("categoria");
 
-        jLabel5.setText("Preço de venda");
+        LbPrecoCusto.setText("Preço de custo");
 
-        jLabel6.setText("Quantidade Fixa");
+        LbPrecoVenda.setText("Preço de venda");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        LbQtdFixa.setText("Quantidade Fixa");
+
+        ComboCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         javax.swing.GroupLayout pnCamposLayout = new javax.swing.GroupLayout(pnCampos);
         pnCampos.setLayout(pnCamposLayout);
@@ -120,32 +122,32 @@ public class ProdutosView extends javax.swing.JInternalFrame {
                     .addGroup(pnCamposLayout.createSequentialGroup()
                         .addGroup(pnCamposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(pnCamposLayout.createSequentialGroup()
-                                .addComponent(jLabel5)
+                                .addComponent(LbPrecoVenda)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField5))
+                                .addComponent(txtPrecoVenda))
                             .addGroup(pnCamposLayout.createSequentialGroup()
-                                .addComponent(jLabel4)
+                                .addComponent(LbPrecoCusto)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField4))
+                                .addComponent(txtPrecoCusto))
                             .addGroup(pnCamposLayout.createSequentialGroup()
-                                .addComponent(jLabel3)
+                                .addComponent(LbCategoria)
                                 .addGap(37, 37, 37)
-                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(ComboCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnCamposLayout.createSequentialGroup()
                         .addGroup(pnCamposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(pnCamposLayout.createSequentialGroup()
-                                .addComponent(jLabel2)
+                                .addComponent(LbDaescricao)
                                 .addGap(33, 33, 33)
-                                .addComponent(jTextField3))
+                                .addComponent(txtDescricao))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnCamposLayout.createSequentialGroup()
-                                .addComponent(jLabel1)
+                                .addComponent(LbCodigo)
                                 .addGap(18, 18, 18)
-                                .addComponent(jTextField1)
+                                .addComponent(txtCodigo)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel6)
+                                .addComponent(LbQtdFixa)
                                 .addGap(18, 18, 18)
-                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(txtQtdFixa, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(37, 37, 37))))
         );
         pnCamposLayout.setVerticalGroup(
@@ -154,27 +156,27 @@ public class ProdutosView extends javax.swing.JInternalFrame {
                 .addGap(16, 16, 16)
                 .addGroup(pnCamposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(pnCamposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel1)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(LbCodigo)
+                        .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnCamposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel6)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(LbQtdFixa)
+                        .addComponent(txtQtdFixa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnCamposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LbDaescricao)
+                    .addComponent(txtDescricao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(pnCamposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LbCategoria)
+                    .addComponent(ComboCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(pnCamposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LbPrecoCusto)
+                    .addComponent(txtPrecoCusto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(pnCamposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LbPrecoVenda)
+                    .addComponent(txtPrecoVenda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(33, Short.MAX_VALUE))
         );
 
@@ -221,28 +223,29 @@ public class ProdutosView extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> ComboCategoria;
+    private javax.swing.JLabel LbCategoria;
+    private javax.swing.JLabel LbCodigo;
+    private javax.swing.JLabel LbDaescricao;
+    private javax.swing.JLabel LbPrecoCusto;
+    private javax.swing.JLabel LbPrecoVenda;
+    private javax.swing.JLabel LbQtdFixa;
     private javax.swing.JButton btnEditar;
     private javax.swing.JButton btnExcluir;
     private javax.swing.JButton btnNovo;
     private javax.swing.JButton btnPesquisar;
     private javax.swing.JButton btnSalvar;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
     private javax.swing.JPanel pnBotoes;
     private javax.swing.JPanel pnCampos;
     private javax.swing.JScrollPane scrDados;
     private javax.swing.JTable tbDados;
+    private javax.swing.JTextField txtCodigo;
+    private javax.swing.JTextField txtDescricao;
+    private javax.swing.JTextField txtPrecoCusto;
+    private javax.swing.JTextField txtPrecoVenda;
+    private javax.swing.JTextField txtQtdFixa;
     // End of variables declaration//GEN-END:variables
 }
