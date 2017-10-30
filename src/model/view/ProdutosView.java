@@ -238,19 +238,20 @@ public class ProdutosView extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
-       HabilitaDesabilitaBotoes(true);
+       habilitaDesabilitaBotoes(true);
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     private void btnSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarActionPerformed
-        HabilitaDesabilitaBotoes(true);
+        habilitaDesabilitaBotoes(true);
     }//GEN-LAST:event_btnSalvarActionPerformed
 
     private void btnNovoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNovoActionPerformed
-        HabilitaDesabilitaBotoes(false);
+        habilitaDesabilitaBotoes(false);
     }//GEN-LAST:event_btnNovoActionPerformed
 
     private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirActionPerformed
-         HabilitaDesabilitaBotoes(true);
+         habilitaDesabilitaBotoes(true);
+         
     }//GEN-LAST:event_btnExcluirActionPerformed
 
     
@@ -280,20 +281,16 @@ public class ProdutosView extends javax.swing.JInternalFrame {
     private javax.swing.JTextField txtQtdFixa;
     // End of variables declaration//GEN-END:variables
 
-  private void HabilitaDesabilitaBotoes(boolean Habilitar)
-  {
-      
-          btnNovo.setEnabled(Habilitar);
-          btnExcluir.setEnabled(Habilitar);
-          btnEditar.setEnabled(Habilitar);
-          btnPesquisar.setEnabled(Habilitar);
-          btnSalvar.setEnabled(Habilitar);
-          btnCancelar.setEnabled(Habilitar);
-          
-     
-     
-      
-  }
+  
+
+    private void habilitaDesabilitaBotoes(boolean b) {
+       btnNovo.setEnabled(b);
+       btnExcluir.setEnabled(b);
+       btnEditar.setEnabled(b);
+       btnPesquisar.setEnabled(b);
+       btnSalvar.setEnabled(!b);
+       btnCancelar.setEnabled(!b);
+    }
 
 }
 

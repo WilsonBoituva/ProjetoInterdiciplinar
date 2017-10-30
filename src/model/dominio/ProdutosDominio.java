@@ -2,7 +2,7 @@
 package model.dominio;
 
 
-public class Produtos 
+public class ProdutosDominio 
 {
     private int codigoInterno;
     private String descricao;
@@ -12,7 +12,7 @@ public class Produtos
     private String codigoBarras;
     private int QtdFixa;
 
-    public Produtos() {
+    public ProdutosDominio() {
     }
 
     public int getCodigoInterno() {
