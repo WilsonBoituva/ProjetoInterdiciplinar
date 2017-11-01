@@ -68,7 +68,7 @@ public class ProdutosDominio
     }
 
     public void setQtdFixa(int QtdFixa) {
-        this.QtdFixa = QtdFixa;
+        this.QtdFixa = QtdFixa;     
     }
     
     
